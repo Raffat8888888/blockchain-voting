@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting App</title>
+    
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#candidates {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.candidate {
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.message {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #e0ffe0;
+    border: 1px solid #00aa00;
+    border-radius: 5px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Voting App</h1>
+    <div id="candidates">
+        <!-- Candidate list will be populated dynamically -->
+    </div>
+    <form id="addCandidateForm">
+        <input type="text" id="candidateName" placeholder="Enter candidate name">
+        <button type="button" id="addCandidateButton">Add Candidate</button>
+    </form>
+    <button id="voteButton">Vote</button>
+    <div id="message"></div>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.3/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
